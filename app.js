@@ -46,7 +46,7 @@ var createNewTaskElement=function(taskString){
     editButton.className="btn";
 
     deleteButton.className="btn btn-delete";
-    deleteButtonImg.className="btn-image";
+    deleteButtonImg.className="btn__image";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -88,11 +88,11 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".btn");
-    var containsClass=listItem.classList.contains("item-edit");
-    //If class of the parent is .item-edit
+    var containsClass=listItem.classList.contains("item_edit");
+    //If class of the parent is .item_edit
     if(containsClass){
 
-        //switch to .item-edit
+        //switch to .item_edit
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
@@ -101,8 +101,8 @@ var editTask=function(){
         editBtn.innerText="Save";
     }
 
-    //toggle .item-edit on the parent.
-    listItem.classList.toggle("item-edit");
+    //toggle .item_edit on the parent.
+    listItem.classList.toggle("item_edit");
 };
 
 
