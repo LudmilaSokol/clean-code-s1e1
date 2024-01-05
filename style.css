@@ -22,6 +22,7 @@
     text-align: center;
   }
 }
+
 .main {
   display: block;
   width: 500px;
@@ -43,7 +44,7 @@
   list-style:none;
 }
 .input,
-.btn{
+.btn {
   outline:none;
 }
 .btn {
@@ -58,6 +59,7 @@
 .btn:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .title,
 .main-title-label[for="input-new-task"] {
@@ -107,7 +109,6 @@
 .item > * {
   vertical-align: middle;
 }
-
 .item > .input[type="checkbox"] {
   margin: 0 10px;
 }
@@ -139,12 +140,10 @@
 .items .item .input[type=text] {
   display:none
 }
-
 .items .item.item-edit .input[type=text] {
   display:inline-block;
   width:224px
 }
-
 .items .item.item-edit .label {
   display:none;
 }
